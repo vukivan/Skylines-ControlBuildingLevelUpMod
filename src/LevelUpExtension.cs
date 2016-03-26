@@ -18,10 +18,8 @@
 */
 
 using ColossalFramework;
-using ColossalFramework.UI;
 using ICities;
 using System;
-using UnityEngine;
 
 namespace ControlBuildingLevelUpMod {
     public class LevelUpExtension : LevelUpExtensionBase {
@@ -88,7 +86,7 @@ namespace ControlBuildingLevelUpMod {
                                 "\n    target level is:  " + targetLevel);
                 #endif
 
-                if (currentLevel > lockLevel) {
+                if (currentLevel >= lockLevel) {
                     #if DEBUG
                     Logger.Info("Building level too high: " + buildingID);
                     #endif
@@ -97,7 +95,7 @@ namespace ControlBuildingLevelUpMod {
                     //TODO: b.m_flags = Building.Flags.Downgrading; ?
                 }
 
-                if (targetLevel > lockLevel && targetLevel > currentLevel) {
+                if (targetLevel >= lockLevel && targetLevel >= currentLevel) {
                     #if DEBUG
                     Logger.Info("Prevent building from leveling up: " + buildingID);
                     #endif

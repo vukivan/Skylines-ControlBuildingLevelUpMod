@@ -19,12 +19,8 @@
 
 using ICities;
 using System.Collections.Generic;
-using ColossalFramework;
-using ColossalFramework.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using System.IO.Compression;
-using System;
 
 namespace ControlBuildingLevelUpMod {
     class Districts {

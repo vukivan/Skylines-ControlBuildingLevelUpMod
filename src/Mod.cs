@@ -17,10 +17,7 @@
     along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-using ColossalFramework;
-using ColossalFramework.UI;
 using ICities;
-using System;
 
 namespace ControlBuildingLevelUpMod {
     public class Mod: IUserMod {
